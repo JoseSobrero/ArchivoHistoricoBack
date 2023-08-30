@@ -10948,11 +10948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Vanessa_Carreras\\Estudios\\Ezpeleta-Software\\Segundo_año\\Programación_II\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
       "projectName": "ArchivoHistoricoApi",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Vanessa_Carreras\\Estudios\\Ezpeleta-Software\\Segundo_año\\Programación_II\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Vanessa_Carreras\\Estudios\\Ezpeleta-Software\\Segundo_año\\Programación_II\\ArchivoHistoricoBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"

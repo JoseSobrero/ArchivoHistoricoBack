@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J29LzOJDmhsUsg5foXT3DSkfKsih7xA3O6Re2cng5+2ke/0NsjezCQ/WQYmpXHq7qyCi9g31jmlMRKasNKsY+Q==",
+  "dgSpecHash": "YiCyTEw7pPYLJM9+kSsZLxQxy2he2dkVjTd7/WLknQ9xvFafJA7YfP2DZjqsTfFUmQl0VFRL8yDXf38ZvFqHpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\Vanessa_Carreras\\Estudios\\Ezpeleta-Software\\Segundo_año\\Programación_II\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
