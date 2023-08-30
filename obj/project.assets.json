@@ -10943,19 +10943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
       "projectName": "ArchivoHistoricoApi",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\obj\\",
+      "projectPath": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
+      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
