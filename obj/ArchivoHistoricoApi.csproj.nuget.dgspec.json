@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {}
+    "c:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {
+    "c:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
+        "projectUniqueName": "c:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
         "projectName": "ArchivoHistoricoApi",
-        "projectPath": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
+        "projectPath": "c:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\obj\\",
+        "outputPath": "c:\\Users\\Lucas\\Documents\\Programacion\\Programacion2\\ArchivoHistorico\\ArchivoHistoricoBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
