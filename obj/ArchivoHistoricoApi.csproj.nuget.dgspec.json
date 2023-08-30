@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj": {}
+    "C:\\Users\\Davito\\Desktop\\Proyectos\\Programacion\\Archivo historico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj": {
+    "C:\\Users\\Davito\\Desktop\\Proyectos\\Programacion\\Archivo historico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Davito\\Desktop\\Proyectos\\Programacion\\Archivo historico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
         "projectName": "ArchivoHistoricoApi",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\obj\\",
+        "projectPath": "C:\\Users\\Davito\\Desktop\\Proyectos\\Programacion\\Archivo historico\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
+        "packagesPath": "C:\\Users\\Davito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Davito\\Desktop\\Proyectos\\Programacion\\Archivo historico\\ArchivoHistoricoBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Davito\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
