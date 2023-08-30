@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
         "projectName": "ArchivoHistoricoApi",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\ArchivoHistoricoApi.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\ArchivoHistoricoApi\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Desarrollo de Software\\ARCHIVO HISTORICO\\ArchivoHistoricoBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
