@@ -14,4 +14,5 @@ public class ArchivoHistoricoContext : DbContext
     public DbSet<Integrantes> Integrantes { get; set; } = null!;
     public DbSet<Libros> Libros { get; set; } = null!;
     public DbSet<Contacto> Contacto { get; set; } = null!;
+    public DbSet<CargaImg> CargaImg { get; set; }
 }
