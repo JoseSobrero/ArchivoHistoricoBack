@@ -1,0 +1,194 @@
+body{
+    background-color: rgb(199, 188, 139);
+    justify-content: center;
+    align-items: center;
+}
+/* Propiedades del contenedor */
+.contenedor{
+    margin: 3rem 3rem 7rem 3rem;
+    height: 40rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    clip-path: polygon(12% 0, 88% 0, 100% 30%, 100% 70%, 88% 100%, 12% 100%, 0% 70%, 0% 30%);
+}
+
+a{
+    margin: 1%;
+    text-decoration: none;
+}
+
+a p{
+    color: black;
+    
+}
+.overlay{
+    background-size: cover;
+    height: 6rem;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.699);
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    font-size: 2rem;
+    border-radius: 0px 0px 10px 10px;
+    
+    
+}
+
+
+ /* configuracion de las cards con sus backgrounds */
+.card1{
+    height: 35rem;
+    width: 18rem;
+    background: url(../img/carrousel.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card1:hover{
+    height: 38rem;
+    width: 21rem;
+    background: url(../img/carrousel.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card2{
+    height: 35rem;
+    width: 18rem;
+    background: url(../img/home.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card2:hover{
+    height: 38rem;
+    width: 21rem;
+    background: url(../img/home.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card3{
+    height: 35rem;
+    width: 18rem;
+    background: url(../img/integrantes.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card3:hover{
+    height: 38rem;
+    width: 21rem;
+    background: url(../img/integrantes.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card4{
+    height: 35rem;
+    width: 18rem;
+    background: url(../img/libros.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+.card4:hover{
+    height: 38rem;
+    width: 21rem;
+    background: url(../img/libros.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 3px black;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    margin: 1%;
+    transition: 0.5s;
+}
+
+/* Efecto de blur con el hover */
+
+.glass{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    transition: 0.5s;
+}
+.glass:hover{
+    background: #fafafa10;
+    backdrop-filter: blur(0.2rem);
+    transition: 0.5s;
+}
+
+.img_perfil{
+    background: url(https://static.vecteezy.com/system/resources/previews/004/477/351/non_2x/silhouette-person-social-media-isolated-icon-free-vector.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    
+}
+
+.navbar-toggler{
+    
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-toggler:hover{
+    box-shadow: 0px 0px 8px 1px rgb(214, 214, 213);
+}
