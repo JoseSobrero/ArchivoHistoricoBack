@@ -6,9 +6,10 @@ body{
 }
 /* Propiedades del contenedor */
 .contenedor{
-    margin: 7rem 3rem 7rem 3rem;
-    height: 40rem;
-    width: 90%;
+    margin: 6rem 3rem 3rem 3rem;
+    padding: 0 4rem;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -21,6 +22,8 @@ body{
 a{
     margin: 1%;
     text-decoration: none;
+    height: 85%;
+    width: 20%;
 }
 
 a p{
@@ -44,8 +47,8 @@ a p{
 
  /* configuracion de las cards con sus backgrounds */
 .card1, .card2, .card3, .card4{
-    height: 35rem;
-    width: 18rem;
+    height: 60vh;
+    width: 17vw;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 3px black;
     align-items: end;
@@ -56,8 +59,8 @@ a p{
 }
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover{
-    height: 38rem;
-    width: 21rem;
+    height: 65vh;
+    width: 19vw;
     box-shadow: 0px 0px 28px 3px rgb(24, 22, 19);
     border: solid 1px black;
     transition: 0.5s;
