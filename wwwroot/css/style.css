@@ -138,7 +138,6 @@ a p{
     justify-content: center;
     display: flex;
     backdrop-filter: blur(0.08rem);
-    
 }
 .glass:hover{
     background: #fafafa10;
