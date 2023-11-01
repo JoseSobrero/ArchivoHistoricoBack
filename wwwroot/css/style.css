@@ -80,9 +80,12 @@ a p{
         transition: 0.5s;
     }
     .overlay{
-        height: 2rem;
+        height: 100%;
     width: 100%;
-    font-size: 1rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px ;
+    background-color: rgba(240, 248, 255, 0.328);
+    border-radius: 10px;
     }
     .contenedor{
         flex-direction: column;
@@ -92,6 +95,7 @@ a p{
         overflow: auto;
         clip-path: polygon(0 0, 100% 0, 100% 23%, 100% 100%, 70% 100%, 0 100%, 0% 70%, 0% 30%);
         padding: 0;
+        background-color: rgb(199, 188, 139);
     }
 }
 
