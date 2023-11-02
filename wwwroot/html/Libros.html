@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../lib/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="../js/jQuery.js"></script>
@@ -13,7 +14,7 @@
 <body>
     
 
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Vista privada</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -57,5 +58,56 @@
         </div>
       </nav>
 
+
+      <div class="contenedor-card">
+        <div class="row">
+          <div class="col-2">
+        <div class="card-items">
+          <button class="buttom-add"><i class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="agregarCliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="exampledModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content modal_style">
+              <div class="modal-header">
+                  <h1 class="modal-title" id="exampleModalLabel" style="color: white;">Nuevo Libro</h1>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <form action="javascript:void(0)" method="post" class="input-group">
+                          <div class="col-md-3 mb-3 margen">
+                              <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                          </div>
+                          <div class="col-md-3 mb-3 margen">
+                              <input type="text" id="descripcion" class="form-control" placeholder="Descripcion">
+                          </div>
+                          <div class="col-md-3 mb-3 margen">
+                              <input type="text" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+                          </div>
+
+                          <div class="col-md-3 margen text-center">
+                              <div class="input-group mb-3">
+                                  <div class="">
+                                      <!-- <input type="checkbox" id="deuda" value="false" class="form-check-input margen mt_0" style="padding-right: 1rem;">
+                                      <label for="" style="color: white; padding: 5px;">Tiene deuda?</label> -->
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
+                  <button type="button" class="btn btn-primary" onclick="agregarCliente()">Agregar cliente</button>
+              </div>
+          </div>
+      </div>
+  </div>
 </body>
 </html>

@@ -72,6 +72,8 @@ a p{
         height: 20vh;
         margin: 0.80% ;
     }
+
+    
     .card1:hover, .card2:hover, .card3:hover, .card4:hover{
         width: 73vw;
         height: 23vh;
@@ -89,7 +91,7 @@ a p{
     }
     .overlay p{
         color: rgb(207, 203, 203);
-    } 
+    }
     .contenedor{
         flex-direction: column;
         height: 100%;
@@ -179,4 +181,37 @@ a p{
     display: flex; 
     justify-content: start; 
     align-items: start;
+}
+
+
+/* clases para herramientas */
+
+.contenedor-card {
+    margin: 15vh 8rem 2rem 8rem;
+    padding: 4rem 4rem;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    overflow: auto;
+    
+}
+
+
+.card-items {
+    height: 35vh;
+    width: 25vh;
+    margin: 0.6rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttom-add {
+    height: 35vh;
+    width: 20vh;
+    font-size: 4rem;
+    border: 0;
+    background-color: #fafafa10;
 }
