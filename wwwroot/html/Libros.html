@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../lib/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="../js/jQuery.js"></script>
+    <script src="../js/js-back.js"></script>
 </head>
 <body>
     
@@ -63,15 +64,33 @@
         <div class="row">
           <div class="col-2">
         <div class="card-items">
-          <button class="buttom-add"><i class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
+          <button class="buttom-add" data-bs-toggle="modal" data-bs-target="#agregarLibro"><i class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
         </div>
       </div>
       </div>
 
+      <table id="tablasLibros" class="table table-dark table-hover Tabla">
+        <thead style="border-radius: 20px;" >
+            <th style="border-radius: 20px 0px 0px 0px;">Deuda</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Editar</th>
+            <th style="border-radius: 0px 20px 0px 0px;">Eliminar</th>
+
+        </thead>
+
+        <tbody id="Libros">
+        </tbody>
+
+    </table>
 
 
+<script>
+  window.onload = traerLibros();
+</script>
 
-      <div class="modal fade" id="agregarCliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      <div class="modal fade" id="agregarLibro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="exampledModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content modal_style">
@@ -82,13 +101,13 @@
                   <div class="row">
                       <form action="javascript:void(0)" method="post" class="input-group">
                           <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                              <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
                           </div>
                           <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="descripcion" class="form-control" placeholder="Descripcion">
+                              <input type="text" id="Resenia" class="form-control" placeholder="Descripcion">
                           </div>
                           <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+                              <input type="text" id="DondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
                           </div>
 
                           <div class="col-md-3 margen text-center">
@@ -104,7 +123,7 @@
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
-                  <button type="button" class="btn btn-primary" onclick="agregarCliente()">Agregar cliente</button>
+                  <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregarlibro</button>
               </div>
           </div>
       </div>
