@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../lib/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-    <script src="../js/jQuery.js"></script>
-    <script src="../js/js-back.js"></script>
+  <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../lib/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+  <script src="../js/jQuery.js"></script>
+  <script src="../js/js-back.js"></script>
 </head>
+
 <body>
-    
 
-    <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Vista privada</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span><div class="img_perfil">
-            </div</span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones de usuario</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><div class="img_perfil">
-                  </div><p class="nav-link" style="margin-top: 0.8rem;">Nombre usuario</p></a>
+
+  <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Vista privada</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span>
+          <div class="img_perfil">
+            </div< /span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Opciones de usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <div class="img_perfil">
+                </div>
+                <p class="nav-link" style="margin-top: 0.8rem;">Nombre usuario</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
 
-      <div class="contenedor-card">
-        <div class="row">
-          <div class="col-2">
+
+  <div class="contenedor-card">
+    <div id="contenedorCards" class="row">
+      <div class="col-2">
         <div class="card-items">
-          <button class="buttom-add" data-bs-toggle="modal" data-bs-target="#agregarLibro"><i class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
+          <button class="buttom-add" data-bs-toggle="modal" data-bs-target="#agregarLibro"><i
+              class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
         </div>
       </div>
-      </div>
-
-      <table id="tablasLibros" class="table table-dark table-hover Tabla">
-        <thead style="border-radius: 20px;" >
-            <th style="border-radius: 20px 0px 0px 0px;">Deuda</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Edad</th>
-            <th>Editar</th>
-            <th style="border-radius: 0px 20px 0px 0px;">Eliminar</th>
-
-        </thead>
-
-        <tbody id="Libros">
-        </tbody>
-
-    </table>
+    </div>
+  </div>
 
 
-<script>
-  window.onload = traerLibros();
-</script>
 
-      <div class="modal fade" id="agregarLibro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="exampledModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content modal_style">
-              <div class="modal-header">
-                  <h1 class="modal-title" id="exampleModalLabel" style="color: white;">Nuevo Libro</h1>
+
+
+  <script>
+    window.onload = traerLibros();
+  </script>
+
+  <div class="modal fade" id="agregarLibro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="exampledModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal_style">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel" style="color: white;">Nuevo Libro</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <form action="javascript:void(0)" method="post" class="input-group">
+              <div class="col-md-3 mb-3 margen">
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre">
               </div>
-              <div class="modal-body">
-                  <div class="row">
-                      <form action="javascript:void(0)" method="post" class="input-group">
-                          <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="Nombre" class="form-control" placeholder="Nombre">
-                          </div>
-                          <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="Resenia" class="form-control" placeholder="Descripcion">
-                          </div>
-                          <div class="col-md-3 mb-3 margen">
-                              <input type="text" id="DondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
-                          </div>
+              <div class="col-md-3 mb-3 margen">
+                <input type="text" id="resenia" class="form-control" placeholder="Descripcion">
+              </div>
+              <div class="col-md-3 mb-3 margen">
+                <input type="text" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+              </div>
 
-                          <div class="col-md-3 margen text-center">
-                              <div class="input-group mb-3">
-                                  <div class="">
-                                      <!-- <input type="checkbox" id="deuda" value="false" class="form-check-input margen mt_0" style="padding-right: 1rem;">
+              <div class="col-md-3 margen text-center">
+                <div class="input-group mb-3">
+                  <div class="">
+                    <!-- <input type="checkbox" id="deuda" value="false" class="form-check-input margen mt_0" style="padding-right: 1rem;">
                                       <label for="" style="color: white; padding: 5px;">Tiene deuda?</label> -->
-                                  </div>
-                              </div>
-                          </div>
-                      </form>
                   </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
-                  <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregarlibro</button>
-              </div>
+            </form>
           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
+          <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregarlibro</button>
+        </div>
       </div>
+    </div>
   </div>
 </body>
+
 </html>
