@@ -1,8 +1,9 @@
 function traerLibros() {
     fetch('https://localhost:7153/api/Libros')
+    // fetch('http://localhost:5229/api/Libros')
     .then(respuesta => respuesta.json())
     .then(data => mostrarLibros(data))
-    // .catch(error => console.error("no se puede accder a la api", error));
+    .catch(error => console.error("no se puede accder a la api", error));
 }
 
 // function mostrarLibros(data) {
@@ -90,11 +91,14 @@ function mostrarLibros(data) {
         btn2.innerText = 'Botón 2';
         btn2.classList.add('btn');
 
-        card.appendChild(nombre);
-        card.appendChild(resenia);
-        card.appendChild(dondeConseguirlo);
-        card.appendChild(btn1);
-        card.appendChild(btn2);
+
+        card.appendChild(overlay);
+        overlay.appendChild(nombre);
+        overlay.appendChild(resenia);
+        overlay.appendChild(dondeConseguirlo);
+        overlay.appendChild(btnContainer);
+        btnContainer.appendChild(btn1);
+        btnContainer.appendChild(btn2);
 
         contenedorCards.appendChild(card);
     });
@@ -112,8 +116,9 @@ function mostrarLibros(data) {
 function agregarLibro() {
     var nuevoLibro = {
         nombre: document.getElementById('nombre').value,
-        descripcion: document.getElementById('resenia').value,
-        dondeConseguirlo: document.getElementById('dondeConseguirlo').value
+        resenia: document.getElementById('resenia').value,
+        dondeConseguirlo: document.getElementById('dondeConseguirlo').value,
+        foto: 0,
     }
 fetch('https://localhost:7153/api/Libros',
 {
