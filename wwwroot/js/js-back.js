@@ -88,15 +88,16 @@ function mostrarLibros(data) {
 
         let btn1 = document.createElement('button');
         btn1.innerText = 'Editar';
-        btn1.classList.add('btn');
+        btn1.classList.add('btn-card');
         btn1.setAttribute('onclick', `buscarLibro(${element.id})`);
     
         let btn2 = document.createElement('button');
         btn2.innerText = 'Eliminar';
-        btn2.classList.add('btn');
+        btn2.classList.add('btn-card');
         btn2.setAttribute('onclick', `validacionEliminar(${element.id})`);
 
-
+        contenedorCards.appendChild(col);
+        col.appendChild(card);
         card.appendChild(overlay);
         overlay.appendChild(nombre);
         overlay.appendChild(resenia);
@@ -104,7 +105,7 @@ function mostrarLibros(data) {
         overlay.appendChild(btnContainer);
         btnContainer.appendChild(btn1);
         btnContainer.appendChild(btn2);
-        contenedorCards.appendChild(card);
+        
     });
     
 }

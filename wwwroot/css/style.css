@@ -43,15 +43,28 @@ a p{
 }
 
 .overlay-card{
-    height: 20vh;
+    height: 10vh;
     width: 100%;
     font-size: 1rem;
     text-shadow: 2px 2px 4px black;
-    background-color: rgba(184, 33, 33, 0.993);
+    background-color: rgba(229, 203, 160, 0.322);
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
     overflow: auto;
+    transition: 0.2s;
     }
+
+.overlay-card:hover{
+        height: 20vh;
+        width: 100%;
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px black;
+        background-color: rgba(219, 172, 102, 0.671);
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px;
+        overflow: auto;
+        transition: 0.2s;
+        }
 
     ::-webkit-scrollbar{
         background-color: #fafafa00;
@@ -209,13 +222,14 @@ a p{
     width: 100%;
     background-color: rgb(209, 209, 209);
     border-radius: 20px;
+    overflow: auto;
     
 }
 
 
 .card-items {
     height: 35vh;
-    width: 25vh;
+    width: 11.5vw;
     margin: 0.6rem;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -240,23 +254,40 @@ a p{
 
 
 .btn-container {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 
-.btn {
+.btn-card {
     display: inline-block;
-    margin-right: 5px; /* Espacio entre los botones */
+    margin-right: 5px;
+    background-color: rgba(156, 156, 156, 0.849);
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    transition: 0.1s;
+}
+
+.btn-card:hover{
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: 0.1s;
 }
 
 .buttom-add {
-    height: 35vh;
-    width: 20vh;
+    height: 100%;
+    width: 100%;
     font-size: 4rem;
     border: 0;
-    background-color: #fafafa10;
+    background-color: #fafafa00;
 }
 
-.col-2{
-    padding: 0 auto;
+.modal_style {
+    background-color: rgb(53, 53, 53);
+}
+.margen{
+    margin: 2%;
 }
