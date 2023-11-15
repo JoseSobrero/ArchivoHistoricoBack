@@ -30,7 +30,7 @@ a p{
 }
 .overlay{
     background-size: cover;
-    height: 6rem;
+    height: 6rem; 
     width: 100%;
     background-color: rgba(240, 248, 255, 0.705);
     align-items: center;
@@ -42,6 +42,33 @@ a p{
     
 }
 
+.overlay-card{
+    height: 10vh;
+    width: 100%;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px black;
+    background-color: rgba(229, 203, 160, 0.322);
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    overflow: auto;
+    transition: 0.2s;
+    }
+
+.overlay-card:hover{
+        height: 20vh;
+        width: 100%;
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px black;
+        background-color: rgba(219, 172, 102, 0.671);
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px;
+        overflow: auto;
+        transition: 0.2s;
+        }
+
+    ::-webkit-scrollbar{
+        background-color: #fafafa00;
+    }
 
  /* configuracion de las cards con sus backgrounds */
 .card1, .card2, .card3, .card4{
@@ -72,6 +99,8 @@ a p{
         height: 20vh;
         margin: 0.80% ;
     }
+
+    
     .card1:hover, .card2:hover, .card3:hover, .card4:hover{
         width: 73vw;
         height: 23vh;
@@ -89,7 +118,10 @@ a p{
     }
     .overlay p{
         color: rgb(207, 203, 203);
-    } 
+    }
+
+    
+
     .contenedor{
         flex-direction: column;
         height: 100%;
@@ -179,4 +211,84 @@ a p{
     display: flex; 
     justify-content: start; 
     align-items: start;
+}
+
+
+/* clases para herramientas */
+
+.contenedor-card {
+    margin: 15vh 8rem 2rem 8rem;
+    padding: 1rem 1rem;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px;
+    overflow: auto;
+    
+}
+
+
+.card-items {
+    height: 35vh;
+    width: 11.5vw;
+    margin: 0.6rem;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.card-button {
+    height: 35vh;
+    width: 25vh;
+    margin: 0.6rem;
+    background-color: rgb(90, 74, 74);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: rgba(156, 156, 156, 0.849);
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    transition: 0.1s;
+}
+
+.btn-card:hover{
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.buttom-add {
+    height: 100%;
+    width: 100%;
+    font-size: 4rem;
+    border: 0;
+    background-color: #fafafa00;
+}
+
+.modal_style {
+    background-color: rgb(53, 53, 53);
+}
+.margen{
+    margin: 2%;
 }
