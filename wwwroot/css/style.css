@@ -47,7 +47,7 @@ a p{
     width: 100%;
     font-size: 1rem;
     text-shadow: 2px 2px 4px black;
-    background-color: rgba(229, 203, 160, 0.322);
+    background-color: rgba(226, 225, 223, 0.795);
     border-radius: 0px 0px 20px 20px;
     padding: 10px;
     overflow: auto;
@@ -59,7 +59,7 @@ a p{
         width: 100%;
         font-size: 1rem;
         text-shadow: 2px 2px 4px black;
-        background-color: rgba(219, 172, 102, 0.671);
+        background-color: rgb(223, 222, 222);
         border-radius: 0px 0px 20px 20px;
         padding: 10px;
         overflow: auto;
@@ -232,7 +232,8 @@ a p{
     width: 11.5vw;
     margin: 0.6rem;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-image: url(../img/Harry.jpg);
+    background-size: cover;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -242,9 +243,9 @@ a p{
 
 .card-button {
     height: 35vh;
-    width: 25vh;
+    width: 11.5vw;
     margin: 0.6rem;
-    background-color: rgb(90, 74, 74);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -288,6 +289,6 @@ a p{
 .modal_style {
     background-color: rgb(53, 53, 53);
 }
-.margen{
-    margin: 2%;
-}
+
+
+

@@ -6,55 +6,6 @@ function traerLibros() {
     .catch(error => console.error("no se puede accder a la api", error));
 }
 
-// function mostrarLibros(data) {
-//     const tbody = document.getElementById('Libros')
-//     tbody.innerHTML = "";
-
-//     data.forEach(element => {
-//         let tr = tbody.insertRow();
-
-//         let Nombre = document.createTextNode(element.nombre);
-//         let tdnombre = tr.insertCell(0);
-//         tdnombre.appendChild(Nombre);
-//         tdnombre.id = "tdnombre";
-
-//         let Resenia = document.createTextNode(element.resenia);
-//         let tdresenia = tr.insertCell(1);
-//         tdresenia.appendChild(Resenia);
-//         tdresenia.id = "tdresenia";
-
-//         let DondeConseguirlo = document.createTextNode(element.dondeConseguirlo);
-//         let tddondeConseguirlo = tr.insertCell(2);
-//         tddondeConseguirlo.appendChild(DondeConseguirlo);
-//         tddondeConseguirlo.id = "tddondeConseguirlo";
-
-        // let editar = document.createElement('button');
-        // let icono = document.createElement('i');
-
-        // editar.classList.add('boton-icono');
-        // icono.classList.add('fa-solid', 'fa-pen-to-square', 'icon');
-        // editar.setAttribute('onclick', `BuscarValoresCliente(${element.id})`);
-        // editar.appendChild(icono);
-        
-        
-
-        // let tdEditar = tr.insertCell(4);
-        // tdEditar.appendChild(editar);
-
-        // let eliminar = document.createElement('button');
-        // let icono2 = document.createElement('i');
-        
-        // eliminar.classList.add ('boton-icono');
-        // icono2.classList.add ('fa-solid', 'fa-trash-can', 'delete','icon');
-        // eliminar.setAttribute('onclick', `ValidacionEliminarCliente(${element.id})`);
-        // eliminar.appendChild(icono2);
-
-
-        // let tdEliminar = tr.insertCell(5);
-        // tdEliminar.appendChild(eliminar);
-
-//     });
-// }
 
 
 function mostrarLibros(data) {

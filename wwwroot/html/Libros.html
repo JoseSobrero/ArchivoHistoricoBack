@@ -72,7 +72,7 @@
   <div class="contenedor-card">
     <div id="contenedorCards" class="row">
       <div id="btn-agregar" class="col-2">
-        <div class="card-items">
+        <div class="card-button">
           <button class="buttom-add" data-bs-toggle="modal" data-bs-target="#agregarLibro"><i
               class="fa-solid fa-square-plus" style="color: #c7c9cc;"></i></button>
         </div>
@@ -98,21 +98,22 @@
         <div class="modal-body">
           <div class="row">
             <form action="javascript:void(0)" method="post" class="input-group">
-              <div class="col-md-3 mb-3 margen">
+              <div class="col-md-12 mb-3 ">
                 <input type="text" id="nombre" class="form-control" placeholder="Nombre">
               </div>
-              <div class="col-md-3 mb-3 margen">
-                <input type="text" id="resenia" class="form-control" placeholder="Descripcion">
+              <div class="col-md-12 mb-3 ">
+                <textarea type="text" id="resenia" class="form-control resenia" placeholder="Descripcion"></textarea>
               </div>
-              <div class="col-md-3 mb-3 margen">
+              <div class="col-md-12 mb-3 ">
                 <input type="text" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+              </div>
+              <div class="col-md-12 mb-3 ">
+                <input type="file" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
               </div>
 
               <div class="col-md-3 margen text-center">
                 <div class="input-group mb-3">
                   <div class="">
-                    <!-- <input type="checkbox" id="deuda" value="false" class="form-check-input margen mt_0" style="padding-right: 1rem;">
-                                      <label for="" style="color: white; padding: 5px;">Tiene deuda?</label> -->
                   </div>
                 </div>
               </div>
@@ -121,7 +122,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
-          <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregarlibro</button>
+          <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregar libro</button>
         </div>
       </div>
     </div>
@@ -137,19 +138,22 @@
           <div class="modal-body">
               <div class="row">
                   <form action="javascript:void(0)" method="post" class="input-group">
-                      <div class="col-md-3 mb-3 margen">
+                      <div class="col-md-12 mb-3">
                           <input type="text" id="nombreEditar" class="form-control" placeholder="Nombre">
                       </div>
-                      <div class="col-md-3 mb-3 margen">
-                          <input type="text" id="reseniaEditar" class="form-control" placeholder="Resenia">
+                      <div class="col-md-12 mb-3">
+                          <textarea type="text" id="reseniaEditar" class="form-control" placeholder="Resenia"></textarea>
                       </div>
-                      <div class="col-md-3 mb-3 margen">
+                      <div class="col-md-12 mb-3">
                           <input type="text" id="dondeConseguirloEditar" class="form-control" placeholder="Donde consegurilo">
                       </div>
-                      <div class="col-md-1 mb-3 margen">
+                      <div class="col-md-12 mb-3">
                           <input type="text" id="idEditar" class="form-control" readonly>
                       </div>
-                      <div class="col-md-12 margen text-center">
+                      <div class="col-md-12 mb-3 ">
+                        <input type="file" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+                      </div>
+                      <div class="col-md-12 text-center">
                           <div class="input-group mb-3">
 
                               
