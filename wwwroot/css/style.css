@@ -42,6 +42,20 @@ a p{
     
 }
 
+.overlay-card{
+    height: 20vh;
+    width: 100%;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px black;
+    background-color: rgba(184, 33, 33, 0.993);
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    overflow: auto;
+    }
+
+    ::-webkit-scrollbar{
+        background-color: #fafafa00;
+    }
 
  /* configuracion de las cards con sus backgrounds */
 .card1, .card2, .card3, .card4{
@@ -92,6 +106,8 @@ a p{
     .overlay p{
         color: rgb(207, 203, 203);
     }
+
+    
     .contenedor{
         flex-direction: column;
         height: 100%;
@@ -201,7 +217,8 @@ a p{
     height: 35vh;
     width: 25vh;
     margin: 0.6rem;
-    background-color: rgb(90, 74, 74);
+    padding: 0;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -224,7 +241,7 @@ a p{
 
 .btn-container {
     display: flex;
-    gap: 5px; /* Espacio entre los botones */
+    gap: 5px;
 }
 
 .btn {
@@ -238,4 +255,8 @@ a p{
     font-size: 4rem;
     border: 0;
     background-color: #fafafa10;
+}
+
+.col-2{
+    padding: 0 auto;
 }
