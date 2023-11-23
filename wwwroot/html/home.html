@@ -57,5 +57,83 @@
         </div>
       </nav>
 
+      <div class="modal fade" id="agregarLibro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="exampledModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal_style">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel" style="color: white;">Nuevo Libro</h1>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <form action="javascript:void(0)" method="post" class="input-group">
+                <div class="col-md-3 mb-3 margen">
+                  <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col-md-3 mb-3 margen">
+                  <input type="text" id="resenia" class="form-control" placeholder="Descripcion">
+                </div>
+                <div class="col-md-3 mb-3 margen">
+                  <input type="text" id="dondeConseguirlo" class="form-control" placeholder="Donde conseguirlo">
+                </div>
+  
+                <div class="col-md-3 margen text-center">
+                  <div class="input-group mb-3">
+                    <div class="">
+                      <!-- <input type="checkbox" id="deuda" value="false" class="form-check-input margen mt_0" style="padding-right: 1rem;">
+                                        <label for="" style="color: white; padding: 5px;">Tiene deuda?</label> -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
+            <button type="button" class="btn btn-primary" onclick="agregarLibro()">Agregarlibro</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="editarLibro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="exampledModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal_style">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel" style="color: white;">Editar Libro</h1>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form action="javascript:void(0)" method="post" class="input-group">
+                        <div class="col-md-3 mb-3 margen">
+                            <input type="text" id="nombreEditar" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col-md-3 mb-3 margen">
+                            <input type="text" id="reseniaEditar" class="form-control" placeholder="Resenia">
+                        </div>
+                        <div class="col-md-3 mb-3 margen">
+                            <input type="text" id="dondeConseguirloEditar" class="form-control" placeholder="Donde consegurilo">
+                        </div>
+                        <div class="col-md-1 mb-3 margen">
+                            <input type="text" id="idEditar" class="form-control" readonly>
+                        </div>
+                        <div class="col-md-12 margen text-center">
+                            <div class="input-group mb-3">
+  
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Canecelar</button>
+                <button type="button" class="btn btn-primary" onclick="editarLibro()">Listo</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
 </body>
 </html>
