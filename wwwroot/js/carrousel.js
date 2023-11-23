@@ -1,13 +1,11 @@
-function traerLibros() {
-    fetch('https://localhost:7153/api/Libros')
-    // fetch('http://localhost:5229/api/Libros')
+function traerCarrousel() {
+    fetch('https://localhost:7153/api/Carrousel')
     .then(respuesta => respuesta.json())
-    .then(data => mostrarLibros(data))
+    .then(data => mostrarCarrousel(data))
     .catch(error => console.error("no se puede accder a la api", error));
 }
 
-
-function mostrarLibros(data) {
+function mostrarCarrousel(data) {
     const contenedorCards = document.getElementById('contenedorCards');
     const elementoEspecial = document.getElementById('btn-agregar');
     contenedorCards.innerHTML = '';
@@ -24,14 +22,8 @@ function mostrarLibros(data) {
         let overlay = document.createElement('div');
         overlay.classList.add('overlay-card');
 
-        let nombre = document.createElement('h3');
-        nombre.innerText = element.nombre;
-
-        let resenia = document.createElement('p');
-        resenia.innerText = element.resenia;
-
-        let dondeConseguirlo = document.createElement('p');
-        dondeConseguirlo.innerText = element.dondeConseguirlo;
+        let descripcion = document.createElement('h3');
+        descripcion.innerText = element.descripcion;
 
         let btnContainer = document.createElement('div'); 
         btnContainer.classList.add('btn-container');
@@ -39,7 +31,7 @@ function mostrarLibros(data) {
         let btn1 = document.createElement('button');
         btn1.innerText = 'Editar';
         btn1.classList.add('btn-card');
-        btn1.setAttribute('onclick', `buscarLibro(${element.id})`);
+        btn1.setAttribute('onclick', `buscarCarrousel(${element.id})`);
     
         let btn2 = document.createElement('button');
         btn2.innerText = 'Eliminar';
@@ -49,9 +41,7 @@ function mostrarLibros(data) {
         contenedorCards.appendChild(col);
         col.appendChild(card);
         card.appendChild(overlay);
-        overlay.appendChild(nombre);
-        overlay.appendChild(resenia);
-        overlay.appendChild(dondeConseguirlo);
+        overlay.appendChild(descripcion);
         overlay.appendChild(btnContainer);
         btnContainer.appendChild(btn1);
         btnContainer.appendChild(btn2);
@@ -60,41 +50,28 @@ function mostrarLibros(data) {
     
 }
 
-
-
-
-
-
-
-
-
-
-function agregarLibro() {
-    var nuevoLibro = {
-        nombre: document.getElementById('nombre').value,
-        resenia: document.getElementById('resenia').value,
-        dondeConseguirlo: document.getElementById('dondeConseguirlo').value,
-        foto: 0,
+function agregarCarrousel() {
+    var nuevoCarrousel = {
+        imagen: 0,
+        descripcion: document.getElementById('descripcion').value,
     }
-fetch('https://localhost:7153/api/Libros',
+fetch('https://localhost:7153/api/Carrousel',
 {
 method: 'POST',
 headers: {
     'Accept': 'application/json',
     'content-type': 'application/json'
 },
-body: JSON.stringify(nuevoLibro)
+body: JSON.stringify(nuevoCarrousel)
 }
 )
 .then(respuesta => respuesta.json())
 .then(() => {
-    document.getElementById('nombre').value = "";
-    document.getElementById('resenia').value = "";
-    document.getElementById('dondeConseguirlo').value = "";
-    $('#agregarLibro').modal('hide');
-    traerLibros();
+    document.getElementById('descripcion').value = "";
+    $('#agregarCarrousel').modal('hide');
+    traerCarrousel();
 })
-.catch(error => console.error("no se pudo agregar el libro", error));
+.catch(error => console.error("no se pudo agregar el elemento", error));
 }
 
 function validacionEliminar(id) {
@@ -105,56 +82,52 @@ function validacionEliminar(id) {
 }
 
 function Eliminar(id) {
-    fetch(`https://localhost:7153/api/Libros/${id}`,
+    fetch(`https://localhost:7153/api/Carrousel/${id}`,
     
     {    method: 'DELETE',
     })
-    .then(() => { traerLibros(); })
+    .then(() => { traerCarrousel(); })
     .catch(error=> console.error("No se pudo borrar el elemento"))
     
 }
 
-function buscarLibro(id) {
-    fetch(`https://localhost:7153/api/Libros/${id}`, {
+function buscarCarrousel(id) {
+    fetch(`https://localhost:7153/api/Carrousel/${id}`, {
         method: 'GET'
     })
         .then(respuesta => respuesta.json())
         .then(data => {
             document.getElementById('idEditar').value = data.id;
-            document.getElementById('nombreEditar').value = data.nombre;
-            document.getElementById('reseniaEditar').value = data.resenia;
-            document.getElementById('dondeConseguirloEditar').value = data.dondeConseguirlo;
-            $('#editarLibro').modal('show');
+            document.getElementById('descripcionEditar').value = data.descripcion;
+            $('#editarCarrousel').modal('show');
         })
         .catch(error => console.error("No se pudo acceder a la api", error))
 }
 
-function editarLibro() {
+function editarCarrousel() {
     let id = document.getElementById('idEditar').value;
 
-    let editarLibro = {
+    let editarCarrousel = {
         id: document.getElementById('idEditar').value,
-        nombre: document.getElementById('nombreEditar').value,
-        resenia: document.getElementById('reseniaEditar').value,
-        dondeConseguirlo: document.getElementById('dondeConseguirloEditar').value,
+        imagen: 0,
+        descripcion: document.getElementById('descripcionEditar').value,
+        
         
     }
-    fetch(`https://localhost:7153/api/Libros/${id}`, {
+    fetch(`https://localhost:7153/api/Carrousel/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(editarLibro)
+        body: JSON.stringify(editarCarrousel)
     }
     )
         .then(() => {
             document.getElementById('idEditar').value = 0;
-            document.getElementById('nombreEditar').value = "";
-            document.getElementById('reseniaEditar').value = "";
-            document.getElementById('dondeConseguirloEditar').value = "";
-            $('#editarLibro').modal('hide');
-            traerLibros();
+            document.getElementById('descripcionEditar').value = "";
+            $('#editarCarrousel').modal('hide');
+            traerCarrousel();
         })
         .catch(error => console.error("No se pudo editar el elemento", error))
 }

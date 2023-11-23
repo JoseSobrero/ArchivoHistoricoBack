@@ -292,3 +292,15 @@ a p{
 .margen{
     margin: 2%;
 }
+
+.styleTextarea {
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    height: 30vh;
+}
+
+.estilo-input {
+    width: 90%;
+    height: 20vh;
+}
+
